@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+    <arg name="inverted" default="false" />
+    <node name="chassis_serial_communication" pkg="chassis_serial" type="chassis_serial_communication" output="screen">
+        
+        <param name="serial_port" value="/dev/chassis"/>  #雷达连接的串口
+        <param name="serial_baud" type="int" value="115200"/>
+       
+    </node>
+
+</launch>
